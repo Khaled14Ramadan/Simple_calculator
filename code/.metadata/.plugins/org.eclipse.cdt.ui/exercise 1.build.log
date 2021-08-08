@@ -1,0 +1,9 @@
+
+**** Build of configuration Debug for project exercise 1 ****
+
+make all 
+Building target: exercise 1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,exercise 1.map -mmcu=atmega16 -o"exercise 1.elf"  ./exercise1.o ./keypad.o   
+avr-gcc.exe: 1.map: No such file or directory
+make: *** [exercise 1.elf] Error 1

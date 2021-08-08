@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project calculator ****
+
+**** Internal Builder is used for build               ****
+-avr-objdump -h -S calculator.elf ..\calculator.elf >calculator.lss
+Internal Builder: Cannot run program "-avr-objdump": Launching failed
+Build error occurred, build is stopped
+Time consumed: 80  ms.  

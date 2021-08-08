@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project exercise1 ****
+
+**** Internal Builder is used for build               ****
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -okeypad.o ..\keypad.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/keypad.h:12,
+                 from ..\keypad.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -oexercise1.o ..\exercise1.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/keypad.h:12,
+                 from ..\exercise1.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+avr-gcc -Wl,-Map,exercise1.map -mmcu=atmega16 -oexercise1.elf keypad.o exercise1.o
+-avr-objdump -h -S exercise1.elf ..\exercise1.elf >exercise1.lss
+Internal Builder: Cannot run program "-avr-objdump": Launching failed
+Build error occurred, build is stopped
+Time consumed: 2090  ms.  

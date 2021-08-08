@@ -1,0 +1,27 @@
+
+**** Build of configuration Debug for project exercise2 ****
+
+**** Internal Builder is used for build               ****
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -olcd.o ..\lcd.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/lcd.h:12,
+                 from ..\lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+..\lcd.c: In function 'LCD_intgerToString':
+..\lcd.c:176: warning: implicit declaration of function 'itoa'
+..\lcd.c:177: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -oexercise2.o ..\exercise2.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/lcd.h:12,
+                 from ..\exercise2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+..\exercise2.c: In function 'main':
+..\exercise2.c:21: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+..\exercise2.c:22: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+..\exercise2.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+..\exercise2.c:27: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+avr-gcc -Wl,-Map,exercise2.map -mmcu=atmega16 -oexercise2.elf lcd.o exercise2.o
+-avr-objdump -h -S exercise2.elf ..\exercise2.elf >exercise2.lss
+Internal Builder: Cannot run program "-avr-objdump": Launching failed
+Build error occurred, build is stopped
+Time consumed: 1315  ms.  

@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project test ****
+
+**** Internal Builder is used for build               ****
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -olcd.o ..\lcd.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/lcd.h:12,
+                 from ..\lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+..\lcd.c: In function 'LCD_intgerToString':
+..\lcd.c:177: warning: implicit declaration of function 'itoa'
+..\lcd.c:178: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -okhaled.o ..\khaled.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/lcd.h:12,
+                 from ..\khaled.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+avr-gcc -Wl,-Map,test.map -mmcu=atmega16 -otest.elf lcd.o khaled.o keypad.o
+-avr-objdump -h -S test.elf ..\test.elf >test.lss
+Internal Builder: Cannot run program "-avr-objdump": Launching failed
+Build error occurred, build is stopped
+Time consumed: 1528  ms.  

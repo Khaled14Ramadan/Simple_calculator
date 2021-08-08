@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project testc ****
+
+**** Internal Builder is used for build               ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -osrc\testc.o ..\src\testc.c
+gcc -otestc.exe src\testc.o
+Build complete for project testc
+Time consumed: 708  ms.  

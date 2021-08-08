@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project challenge ****
+
+**** Internal Builder is used for build               ****
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -ochallenge.o ..\challenge.c
+In file included from ..\/micro_config.h:22,
+                 from ..\/lcd.h:12,
+                 from ..\challenge.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+avr-gcc -Wl,-Map,challenge.map -mmcu=atmega16 -ochallenge.elf lcd.o keypad.o challenge.o
+-avr-objdump -h -S challenge.elf ..\challenge.elf >challenge.lss
+Internal Builder: Cannot run program "-avr-objdump": Launching failed
+Build error occurred, build is stopped
+Time consumed: 835  ms.  

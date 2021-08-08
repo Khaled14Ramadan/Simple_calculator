@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project exercise3 ****
+
+**** Internal Builder is used for build               ****
+-avr-objdump -h -S exercise3.elf ..\exercise3.elf >exercise3.lss
+Internal Builder: Cannot run program "-avr-objdump": Launching failed
+Build error occurred, build is stopped
+Time consumed: 116  ms.  
